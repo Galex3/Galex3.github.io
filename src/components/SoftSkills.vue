@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="soft-skills">
     <h2 class="h4 mt-4">Soft Skills</h2>
     <ul class="list-inline">
       <li v-for="soft in softSkills" :key="soft" class="list-inline-item">

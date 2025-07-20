@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="experience">
     <h2 class="h4">Experience</h2>
     <div v-for="job in experience" :key="job.role" class="mb-3">
       <h5 class="mb-1">

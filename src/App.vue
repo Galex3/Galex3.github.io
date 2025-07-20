@@ -1,5 +1,13 @@
 <template>
+  <NavBar />
   <main class="container py-5">
+    <!-- <header>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault" v-model.lazy="darkMode" :aria-checked="darkMode" @changed="darkMode = !darkMode" switch>
+        <label class="form-check-label" for="switchCheckDefault">{{ darkMode ? 'Light Mode' : 'Dark Mode' }}</label>
+      </div>
+      <button class="btn btn-sm btn-primary" @click="printCV">Print CV</button>
+    </header> -->
     <Header :name="name" :title="title" :summary="summary" />
     <Contact :contact="contact" />
     <Experience :experience="experience" />
@@ -20,6 +28,7 @@ import Skills from './components/SkillsSection.vue'
 import Projects from './components/ProjectsSection.vue'
 import Languages from './components/LanguagesSection.vue'
 import SoftSkills from './components/SoftSkills.vue'
+import NavBar from './components/NavBar.vue'
 
 const name = 'Gustavo Silva'
 const title = 'Software Engineer'
@@ -132,3 +141,14 @@ const softSkills = [
   'Creativity',
 ]
 </script>
+
+<style>
+  @media print {
+    nav, button, .btn { display: none !important; }
+    section { page-break-inside: avoid; }
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>

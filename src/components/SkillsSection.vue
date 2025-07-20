@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="skills">
     <h2 class="h4 mt-4">Technical Skills</h2>
     <ul class="list-inline">
       <li v-for="skill in skills" :key="skill" class="list-inline-item">

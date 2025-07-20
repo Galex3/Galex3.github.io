@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="projects">
     <h2 class="h4 mt-4">Projects</h2>
     <div v-for="project in projects" :key="project.name" class="mb-3">
       <h5 class="mb-1">{{ project.name }}</h5>

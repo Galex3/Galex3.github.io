@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="contact">
     <p>
       <strong>Email:</strong> <a :href="'mailto:' + contact.email">{{ contact.email }}</a><br />
       <strong>Phone:</strong> <a :href="'tel:' + contact.phone.replace(/\s/g, '')" target="_blank">{{ contact.phone }}</a><br />
@@ -13,9 +13,3 @@
 <script setup>
 defineProps(['contact'])
 </script>
-
-<style lang="css" scoped>
-  a {
-    text-decoration: none;
-  }
-</style>

@@ -1,9 +1,9 @@
 <template>
-  <header>
+  <section id="header">
     <h1 class="mb-0">{{ name }}</h1>
     <p class="text-muted">{{ title }}</p>
     <p>{{ summary }}</p>
-  </header>
+  </section>
 </template>
 
 <script setup>
