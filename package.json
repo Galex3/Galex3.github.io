@@ -1,9 +1,9 @@
 {
-  "name": "cv-website",
+  "name": "galex3-github-io",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://Galex3.github.io/cv-website",
+  "homepage": "https://Galex3.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
